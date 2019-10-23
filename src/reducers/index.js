@@ -1,3 +1,5 @@
+// MODELS
+// in charge of holding the current state of the application -  always returning objects
 import { combineReducers } from 'redux';
 
 const songsReducer = () => {
@@ -17,6 +19,8 @@ const selectedSongReducer = (selectedSong = null, action) => {
   return selectedSong;
 };
 
+// Collects all the reducers in an object
+// will be passed as a prop to the Store
 export default combineReducers({
   songs: songsReducer,
   selectedSong: selectedSongReducer
