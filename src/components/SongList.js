@@ -38,6 +38,6 @@ input:a function receiving the state from Redux createStore() function
       state is congifured in combineReducers() function in ./reducers index.js
 output: this class based component
 
-whenever we want the state to be updated, the reducers should be put here
+whenever we want the state to be updated, the action crerators should be put here
 */
 export default connect(mapStateToProps, { selectSong })(Songlist);
